@@ -1,0 +1,47 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+$primary: #29ADB2;
+$light: #F3F3F3;
+
+$theme-colors: map-merge( $theme-colors,(
+    "primary": $primary
+));
+
+@import '~bootstrap/scss/bootstrap';
+.btn-primary{
+    color: white;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-size: 30px;
+    color: $light;
+    // font-size: 25px;
+    .bike-logo{
+        font-size: 35px;
+        color: $primary;
+    }
+}
+.slider-image{
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+}
+.slider-content{
+    align-items: center;
+    height: 100%;
+}
+.smalltext{
+    font-size:20px;
+    font-weight: bold;
+}
+.bigtext{
+    font-size:70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: $primary;
+    line-height: 1;
+}
+.overview-area{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
