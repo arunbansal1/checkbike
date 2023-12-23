@@ -5,15 +5,14 @@ import {
     CardText,
     Button
 } from 'reactstrap';
-// import { } from 'react-icons';
 import { ImPower } from "react-icons/im";
 import { FaBatteryFull, FaSuperpowers } from "react-icons/fa";
 export default function BikeCard(params) {
     const bike = params.bike;
-    return <Card>
+    return <Card className='bike-card'>
         <img alt="Sample" src={bike.webpImage} />
         <CardBody>
-            <CardTitle tag="h5">
+            <CardTitle tag="h5" title={bike.variantName}>
                 {bike.variantName}
             </CardTitle>
             <div className='d-flex justify-content-between my-2'>

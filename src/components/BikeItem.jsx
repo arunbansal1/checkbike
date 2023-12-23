@@ -1,18 +1,61 @@
-export default function BikeItem() {
-    return <div>
-        <div class="card mb-3">
-            <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="images/hunter-350-right-front-three-quarter.webp" class="img-fluid rounded-start object-fit-cover h-100" alt="..." />
+import {
+    CardGroup,
+    CardText,
+    Card,
+    CardTitle,
+    CardSubtitle,
+    CardImg,
+    CardBody,
+    Button,
+} from 'reactstrap';
+import httpClient from "../services/httpClient"
+import { FaBatteryFull, FaSuperpowers } from 'react-icons/fa';
+import { ImPower } from 'react-icons/im';
+function BikeItem({ bike }) {
+    return <CardGroup className='mb-4'>
+        <Card>
+            <div className='row'>
+                <div className='col-md-6'>
+                    <CardImg
+                        alt={bike.variantName}
+                        src={bike.image}
+                        top
+                        className='img-fluid h-100 object-fit-cover'
+                    />
                 </div>
-                <div class="col-md-7">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
+                <div className='col-md-6'>
+                    <CardBody>
+                        <CardTitle tag="h5">
+                            {bike.variantName}
+                        </CardTitle>
+                        <CardSubtitle
+                            className="mb-2 text-muted"
+                            tag="h6"
+                        >
+                            {bike.brandName}
+                        </CardSubtitle>
+                        <CardText>
+                            <div className='d-flex justify-content-between my-2'>
+                                <div>
+                                    <FaBatteryFull /> {bike.fuelType}
+                                </div>
+                                <div>
+                                    <FaSuperpowers /> {bike.engine}
+                                </div>
+                                <div>
+                                    <ImPower /> {bike.maxPower ? bike.maxPower : 'NA'}
+                                </div>
+
+                            </div>
+                            {bike.priceRange}
+                        </CardText>
+                        <Button className='w-100' color='dark' outline>
+                            Button
+                        </Button>
+                    </CardBody>
                 </div>
             </div>
-        </div>
-    </div>
+        </Card>
+    </CardGroup>
 }
+export default BikeItem;

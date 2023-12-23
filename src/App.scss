@@ -11,6 +11,12 @@ $theme-colors: map-merge( $theme-colors,(
 .btn-primary{
     color: white;
 }
+.navbar-z-index{
+    z-index:1;
+}
+.app{
+    margin-top: 75px;
+}
 .navbar-brand{
     font-weight: bold;
     font-size: 30px;
@@ -44,4 +50,46 @@ $theme-colors: map-merge( $theme-colors,(
 .overview-area{
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.bike-card{
+    .card-title {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+footer{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-color: $dark;
+}
+.quick-list{
+    // margin-left: 0;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    list-style-type: square;
+}
+.quick-list li{    
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.banner-brand{
+    background-image:url('../public/images/motor-bike-1847779_1280.webp');
+    position: relative;
+}
+.brand-overlay{
+    background-color:black;
+    opacity:0.8;            
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.search-bar:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
 }

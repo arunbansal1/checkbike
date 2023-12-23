@@ -1,6 +1,6 @@
 import Axios from 'axios';
 const httpClient = Axios.create({
-    baseURL:"https://vineshgoyal.online/bikes/api/v1",
+    baseURL:"https://bikes.vineshgoyal.online/api/v1",
     // headers:{
     //     "X-Custom-Header":'ABC'
     // }

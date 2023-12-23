@@ -1,30 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import SearchBar from './SearchBar';
 import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
+  Col,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
+  Input,
+  Form,
+  Label,
+  FormGroup,
+  Row,
+  Button
 } from 'reactstrap';
-
+import Logo from './Logo';
 function Header(args) {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
-
   return (
-    <div>
+    <div className='position-fixed top-0 start-0 end-0 navbar-z-index'>
       <Navbar color='dark' expand="md" dark container>
-        <NavbarBrand href="/">Check<span className='bike-logo'>Bike</span></NavbarBrand>
+        <Logo />
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
+        <SearchBar />
           <Nav className="ms-auto" navbar>
             <NavItem>
               <NavLink href="#" className='active'>HOME</NavLink>
