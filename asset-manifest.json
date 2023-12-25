@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/checkbike/static/css/main.8ffa375f.css",
-    "main.js": "/checkbike/static/js/main.654c4777.js",
+    "main.js": "/checkbike/static/js/main.101a355b.js",
     "static/js/787.26c5d0ac.chunk.js": "/checkbike/static/js/787.26c5d0ac.chunk.js",
     "static/media/motor-bike-1847779_1280.webp": "/checkbike/static/media/motor-bike-1847779_1280.f4b66b79c7e9a670be9b.webp",
     "static/media/hunter-350-right-front-three-quarter.webp": "/checkbike/static/media/hunter-350-right-front-three-quarter.da2c702fd3b687bfd857.webp",
     "index.html": "/checkbike/index.html",
     "main.8ffa375f.css.map": "/checkbike/static/css/main.8ffa375f.css.map",
-    "main.654c4777.js.map": "/checkbike/static/js/main.654c4777.js.map",
+    "main.101a355b.js.map": "/checkbike/static/js/main.101a355b.js.map",
     "787.26c5d0ac.chunk.js.map": "/checkbike/static/js/787.26c5d0ac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ffa375f.css",
-    "static/js/main.654c4777.js"
+    "static/js/main.101a355b.js"
   ]
 }
