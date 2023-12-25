@@ -7,6 +7,8 @@ import {
 } from 'reactstrap';
 import { ImPower } from "react-icons/im";
 import { FaBatteryFull, FaSuperpowers } from "react-icons/fa";
+import { FaEye } from 'react-icons/fa6';
+import { IoMdAdd } from 'react-icons/io';
 export default function BikeCard(params) {
     const bike = params.bike;
     return <Card className='bike-card'>
@@ -25,13 +27,15 @@ export default function BikeCard(params) {
                 <div>
                     <ImPower /> {bike.maxPower ? bike.maxPower : 'NA'}
                 </div>
-
             </div>
             <CardText>
                 <b>Price:</b> {bike.priceRange}
             </CardText>
-            <Button outline color='dark' className='w-100' >
-                View more Detail
+            <Button outline color='dark'>
+                View Detail <FaEye />
+            </Button>
+            <Button outline color='dark' className='float-end'>
+                Compare <IoMdAdd />
             </Button>
         </CardBody>
     </Card>

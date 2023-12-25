@@ -2,13 +2,23 @@ import { FaPhoneAlt } from "react-icons/fa";
 import BrandList from "./BrandList";
 import MainSlider from "./MainSlider";
 import BikeCard from "./BikeCard";
+import { useEffect, useState } from "react";
+import httpClient from "../services/httpClient";
 
-function HomePage({bikes}) {
+function HomePage() {
+    const [bikes, setBikes] = useState([])
+    useEffect(function () {
+        httpClient.get("bikes")
+            .then((res) => {
+                setBikes(res.data.data)
+            })
+    }, [])
+
     const allbikes = bikes.map((bike) => {
         return <div className='col-md-4 col-sm-6 mb-4' key={bike.id}>
-          <BikeCard bike={bike} />
+            <BikeCard bike={bike} />
         </div>
-      })
+    })
     return <>
         <MainSlider />
         <BrandList />
@@ -43,7 +53,7 @@ function HomePage({bikes}) {
                     </div>
                     <div className='col-md-6'>
                         <div className='overview-image'>
-                            <img src="images/banner-1.webp" className='img-fluid' />
+                            <img src="images/banner-1.webp" className='img-fluid' alt='banner'/>
                         </div>
                     </div>
                 </div>

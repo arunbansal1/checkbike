@@ -59,5 +59,8 @@ export default function Footer(){
                 </div>               
              </div>
         </div>
+        <div className="copyright text-center">
+      Copyright © 2023. Example company private limited
+    </div>
     </footer>
 }

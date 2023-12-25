@@ -6,7 +6,7 @@ function BrandList() {
     useEffect(() => {
         httpClient.get('brands')
             .then((res) => {
-                console.log(res.data)
+                // console.log(res.data)
                 setBrand(res.data)
             })
     }, [])

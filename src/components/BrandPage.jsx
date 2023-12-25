@@ -12,7 +12,7 @@ export default function BrandPage() {
                 setBrandBikes(res.data.bikes)
                 setPageHeading(res.data)
             })
-    }, [])
+    }, [params.brandurl])
     const bikesList = brandBikes.map((bike) => {
         return <div className="col-sm-6" key={bike.id}>
             <BikeItem bike={bike}  />

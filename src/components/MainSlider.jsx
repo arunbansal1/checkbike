@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import {
     Carousel,
     CarouselItem,
-    CarouselControl,
     CarouselIndicators,
-    CarouselCaption,
 } from 'reactstrap';
 
 const items = [
@@ -62,8 +60,8 @@ function MainSlider(args) {
                             <div className='col-sm-6'>
                                 <h4 className='smalltext'>{item.smallText}</h4>
                                 <h2 className='bigtext'>{item.bigText}</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Deserunt, facilis? Perferendis est nobis debitis dicta dolorem. 
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Deserunt, facilis? Perferendis est nobis debitis dicta dolorem.
                                     Nobis dolorum inventore veniam odit itaque rerum nisi quod.
                                 </p>
                                 <button className='btn btn-outline-primary rounded-pill btn-lg'>View Details</button>
@@ -75,7 +73,6 @@ function MainSlider(args) {
             </CarouselItem>
         );
     });
-
     return (
         <Carousel
             activeIndex={activeIndex}

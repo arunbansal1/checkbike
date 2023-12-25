@@ -1,28 +1,24 @@
 import {
     Form,
-    Input,
-    Button
 } from 'reactstrap';
-import { useState,useContext } from 'react';
+import { useState } from 'react';
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
-import { Context } from './contextApi';
 function SearchBar() {
-    const [input, setInput] = useState({});
+    const [input, setInput] = useState(null);
     const navigate = useNavigate()
-    const { setSearchResult } = useContext(Context);
     function onChangeHandler(event) {
         let inputElem = event.target;
         setInput(inputElem.value)
     }
     function onClickHandler() {
-        console.log(input)
-        // setSearchResult(input)
-        navigate('/search-page?q='+input)
-        // setSearchResult(input)
+        if(input != null){
+            navigate('/search-page?q='+input)
+        }
     }
     function onSubmitHandler(e){
         e.preventDefault();
+        onClickHandler();
     }
     return <Form className='ms-auto' onSubmit={onSubmitHandler}>
         <div className="input-group">

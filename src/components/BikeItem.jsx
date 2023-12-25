@@ -8,9 +8,10 @@ import {
     CardBody,
     Button,
 } from 'reactstrap';
-import httpClient from "../services/httpClient"
 import { FaBatteryFull, FaSuperpowers } from 'react-icons/fa';
 import { ImPower } from 'react-icons/im';
+import { IoMdAdd } from 'react-icons/io';
+import { FaEye } from 'react-icons/fa6';
 function BikeItem({ bike }) {
     return <CardGroup className='mb-4'>
         <Card>
@@ -45,12 +46,14 @@ function BikeItem({ bike }) {
                                 <div>
                                     <ImPower /> {bike.maxPower ? bike.maxPower : 'NA'}
                                 </div>
-
                             </div>
                             {bike.priceRange}
                         </CardText>
-                        <Button className='w-100' color='dark' outline>
-                            Button
+                        <Button color='dark' outline>
+                            Detail <FaEye />
+                        </Button>
+                        <Button className='float-end' color='dark' outline>
+                            Compare <IoMdAdd />
                         </Button>
                     </CardBody>
                 </div>
