@@ -1,8 +1,8 @@
 {
   "name": "checkbike",
+  "homepage": "https://arunbansal1.github.io/checkbike",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://arunbansal1.github.io/checkbike",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.17.0",
