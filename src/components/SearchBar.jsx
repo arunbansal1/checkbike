@@ -19,7 +19,7 @@ function SearchBar() {
     function onSubmitHandler(e){
         e.preventDefault();
         onClickHandler();
-    }
+    } 
     return <Form className='ms-auto' onSubmit={onSubmitHandler}>
         <div className="input-group">
             <input type="text" onChange={onChangeHandler} className="form-control border-0 search-bar" placeholder="search you" aria-label="Input group example" aria-describedby="btnGroupAddon" />

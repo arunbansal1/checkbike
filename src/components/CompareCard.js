@@ -11,7 +11,7 @@ function CompareCard({ title, bikeList, bikeKey, onSelectBike, imgUrl }) {
     function onSelectBikeHandler(e, bikeKey) {
         onSelectBike(bikeKey, e.target.value)
     }
-    return <div className='col-md-4 col-sm-6'>
+    return <div className='col-md-4 col-sm-6 pt-4'>
         <Card>
             <img
                 className='zoom'

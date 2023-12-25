@@ -19,7 +19,7 @@ export default function BrandPage() {
         </div>
     })
     return <div>
-        <div className="container">
+        <div className="container pt-5">
             <h1>
                 {pageHeader.title}
             </h1>

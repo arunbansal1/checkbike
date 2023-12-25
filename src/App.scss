@@ -2,11 +2,10 @@
 @import '~bootstrap/scss/variables';
 $primary: #C07F00;
 $light: #F3F3F3;
-
 $theme-colors: map-merge($theme-colors, ("primary": $primary));
-
 @import '~bootstrap/scss/bootstrap';
 
+// header component css 
 .nav-link.active {
     font-weight: 700;
 }
@@ -19,22 +18,24 @@ $theme-colors: map-merge($theme-colors, ("primary": $primary));
     z-index: 1;
 }
 
+// app component css
 .app {
     margin-top: 75px;
 }
 
+// logo component css
 .navbar-brand {
     font-weight: bold;
     font-size: 30px;
     color: $light;
 
-    // font-size: 25px;
     .bike-logo {
         font-size: 35px;
         color: $primary;
     }
 }
 
+// mainSlider component css
 .slider-image {
     height: 600px;
     background-size: cover;
@@ -59,18 +60,22 @@ $theme-colors: map-merge($theme-colors, ("primary": $primary));
     line-height: 1;
 }
 
+// homepage component css
 .overview-area {
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 100px;
 }
-.small-banner-image {
+
+// contact component css
+.form-banner-image {
     background-image: url('../public/images/hunter-350-right-front-three-quarter.webp');
     background-size: cover;
     background-position: center center;
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
-.small-banner-overlay {
+
+.form-banner-overlay {
     background-color: black;
     position: absolute;
     top: 0;
@@ -79,10 +84,13 @@ $theme-colors: map-merge($theme-colors, ("primary": $primary));
     left: 0;
     opacity: 0.7;
 }
+
 .form-box {
     border-radius: 26px;
     box-shadow: 0 0 15px;
 }
+
+// bikecard component css
 .bike-card {
     .card-title {
         text-overflow: ellipsis;
@@ -90,10 +98,13 @@ $theme-colors: map-merge($theme-colors, ("primary": $primary));
         overflow: hidden;
     }
 }
+
+// footer component css
 footer {
     padding-top: 50px;
     background-color: $dark;
 }
+
 .copyright {
     padding: 20px 0;
     color: white;
@@ -106,42 +117,57 @@ footer {
     margin-bottom: 15px;
     list-style-type: square;
 }
+
 .quick-list li {
     margin-bottom: 10px;
     font-size: 17px;
 }
+
+// brandlist component css
 .banner-brand {
     background-image: url('../public/images/motor-bike-1847779_1280.webp');
     position: relative;
+    min-height: 400px;
+    background-position: center center;
 }
+
 .brand-overlay {
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.4;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
 }
+
+// searchbar component css
 .search-bar:focus {
     outline: none;
     border: none;
     box-shadow: none;
 }
+
 .pointer-cursor {
     cursor: pointer;
 }
-.img-margin{
-    margin-left:40px;
+
+// fallback component css
+.img-margin {
+    margin-left: 40px;
 }
+
+// comparecard component css
 .zoom {
     transition: transform .2s;
-  }  
+}
+
 .zoom:hover {
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
-.card{
-    overflow: hidden;
+
+.card {
+    overflow: hide;
 }

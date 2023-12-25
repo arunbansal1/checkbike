@@ -53,7 +53,7 @@ function HomePage() {
                     </div>
                     <div className='col-md-6'>
                         <div className='overview-image'>
-                            <img src="images/banner-1.webp" className='img-fluid' alt='banner'/>
+                            <img src="images/banner-1.webp" className='img-fluid' alt='banner' />
                         </div>
                     </div>
                 </div>

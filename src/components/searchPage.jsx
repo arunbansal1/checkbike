@@ -34,7 +34,7 @@ function SearchPage() {
             (fuelType.length === 0 || fuelType.includes(sbike.fuelType)) &&
             (engine < sbike.ccValue)
         ) {
-               return true
+            return true
         }
         else {
             return false
@@ -51,14 +51,14 @@ function SearchPage() {
                     </div>
                     {isLoading ? <div className='col-sm-9'>
                         <div className='row alert alert-warning'>
-                             please wait data is loading
+                            please wait data is loading
                         </div>
                     </div>
-                    :<div className='col-sm-9'>
-                        <div className='row'>
-                           {filteredBikes.length > 0 ? filteredBikes :<div className='h6 alert alert-warning'>There is no bikes according to set filters</div>}
-                        </div>
-                    </div>}
+                        : <div className='col-sm-9'>
+                            <div className='row'>
+                                {filteredBikes.length > 0 ? filteredBikes : <div className='h6 alert alert-warning'>There is no bikes according to set filters</div>}
+                            </div>
+                        </div>}
                 </div>
             </div>
         </div>

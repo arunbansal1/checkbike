@@ -20,28 +20,28 @@ function Header(args) {
         <Logo />
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ms-auto fw-bold" navbar>
+          <Nav className="m-auto fw-bold" navbar>
             <NavItem>
-              <Link to="/" className={'nav-link ' + (location.pathname === '/'? "active": "")} >HOME</Link>
+              <Link to="/" className={'nav-link ' + (location.pathname === '/' ? "active" : "")} >HOME</Link>
             </NavItem>
             <NavItem>
-              <Link to="/brand/bajaj-bikes" className={'nav-link ' + (location.pathname === '/brand/bajaj-bikes'? "active": "")}>Bajaj Bikes</Link>
+              <Link to="/brand/bajaj-bikes" className={'nav-link ' + (location.pathname === '/brand/bajaj-bikes' ? "active" : "")}>Bajaj Bikes</Link>
             </NavItem>
             <NavItem>
-            <Link to="/brand/honda-bikes" className={'nav-link ' + (location.pathname === '/brand/honda-bikes'? "active": "")}>Honda Bikes</Link>
+              <Link to="/brand/honda-bikes" className={'nav-link ' + (location.pathname === '/brand/honda-bikes' ? "active" : "")}>Honda Bikes</Link>
             </NavItem>
             <NavItem>
-            <Link to="/brand/hero-bikes" className={'nav-link ' + (location.pathname === '/brand/hero-bikes'? "active": "")}>Hero Bikes</Link>
+              <Link to="/brand/hero-bikes" className={'nav-link ' + (location.pathname === '/brand/hero-bikes' ? "active" : "")}>Hero Bikes</Link>
             </NavItem>
             <NavItem>
-            <Link to="/brand/contact-us" className={'nav-link ' + (location.pathname === '/brand/contact-us'? "active": "")}>Contact Us</Link>
+              <Link to="/brand/contact-us" className={'nav-link ' + (location.pathname === '/brand/contact-us' ? "active" : "")}>Contact Us</Link>
             </NavItem>
             <NavItem>
-            <Link to="/brand/compare" className={'nav-link ' + (location.pathname === '/brand/compare'? "active": "")}>Compare</Link>
+              <Link to="/brand/compare" className={'nav-link ' + (location.pathname === '/brand/compare' ? "active" : "")}>Compare</Link>
             </NavItem>
           </Nav>
-          <SearchBar />
         </Collapse>
+        <SearchBar />
       </Navbar>
     </div>
   );
